@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title></title>
+  </head>
+  
+  <body>
+    <main>
+      <h1 id="title"><span>MOA</span> Survey Form</h1>
+      <p id="description">Please answer the form below. Thank you for participating in this survey!</p>
+
+      <form id="survey-form" method="POST">
+        <fieldset class="fieldset1">
+          <label for="name" id="name-label" class="label1">Name
+            <input class="input" type="text" id="name" placeholder="Enter your name" required>
+          </label>
+          <label for="email" id="email-label" class="label1">Email
+            <input class="input" type="email" id="email" placeholder="Enter your Email" required>
+          </label>
+          <label for="number" id="number-label" class="label1">Age
+            <input class="input" type="number" id="number" placeholder="Age" min="13" max="120" >
+          </label>
+          <label for="role">Who is your TXT bias?
+            <select id="role" class="select1">
+              <option> Select Member</option>
+              <option> Yeonjun </option>
+              <option> Soobin </option>
+              <option> Beomgyu </option>
+              <option> Taehyun </option>
+              <option> Hueningkai </option>
+            </select>
+          </label>  
+          <label>
+             Would you recommend TXT to a friend?
+            <label for="referral">
+              <input name="referral" id="referral" type="radio" value="definitely" class="inline">Definitely
+            </label>
+            <label>
+              <input name="referral" id="referral" type="radio" value="maybe" class="inline">Maybe
+            </label>
+            <label>
+              <input name="referral" id="referral" type="radio" value="not-sure" class="inline">Not sure
+            </label>
+          </label>
+        </fieldset>
+
+
+        <fieldset class="fieldset2">
+          <label for="dropdown">What is the main thing you like about TXT?
+            <select id="dropdown" class="select2">
+              <option value=""> Select an option</option>
+              <option value="1"> The members </option>
+              <option value="2"> Their songs </option>
+              <option value="3"> Their concept </option>
+              <option value="4"> Their skills </option>
+            </select>
+          </label>
+          <p></p>
+          <label>What are your favorite TXT albums? (Check all that apply)
+            <label>
+              <input type="checkbox" id="improvement" value="5" class="inline"> The Dream Chapter: Star
+            </label>
+            <label>
+              <input type="checkbox" id="improvement" value="6" class="inline"> The Dream Chapter: Magic
+            </label>
+            <label>
+              <input type="checkbox" id="improvement" value="7" class="inline"> The Dream Chapter: Eternity
+            </label>
+            <label>
+              <input type="checkbox" id="improvement" value="8" class="inline"> Minisode 1: Blue Hour
+            </label>
+            <label>
+              <input type="checkbox" id="improvement" value="9" class="inline"> The Chaos Chapter: Freeze
+            </label>
+            <label>
+              <input type="checkbox" id="improvement" value="10" class="inline"> The Chaos Chapter: Fight or Escape
+            </label>
+            <label>
+              <input type="checkbox" id="improvement" value="11" class="inline"> Minisode 2: Thursday's Child
+            </label>
+            <label>
+              <input type="checkbox" id="improvement" value="12" class="inline"> The Name Chapter: Temptation
+            </label>
+        </fieldset>
+
+        <fieldset class="fieldset3">
+          <label>Any comments or suggestions?
+            <textarea placeholder="Enter your comment here..." rows="3" cols="30"></textarea>
+          </label>
+          
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" />
+        
+      </form>
+    </main>
+  </body>
+</html>
